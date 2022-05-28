@@ -10,6 +10,10 @@
     "@types/node": "^16.11.36",
     "@types/react": "^18.0.9",
     "@types/react-dom": "^18.0.5",
+    "less": "^4.1.2",
+    "less-loader": "^11.0.0",
+    "lodash": "^4.17.21",
+    "ramda-fantasy": "^0.8.0",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "react-scripts": "5.0.1",
@@ -39,5 +43,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.182",
+    "@types/ramda": "^0.28.13"
   }
 }
