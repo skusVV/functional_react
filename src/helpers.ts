@@ -4,12 +4,12 @@ const { Nothing, Just } = Maybe;
 
 export const truthyEither =  (c: any) => c ? Either.Right() : Either.Left()
 
-export const divide = (numerator: number, denominator: number) => {
-    if (denominator === 0) {
+export const divide = (numerator: any, denominator: any) => {
+    if (Maybe.isNothing(numerator) || Maybe.isNothing(denominator) || denominator.getOrElse(0) === 0) {
         return new Nothing();
     }
 
-    return new Just(numerator / denominator);
+    return new Just(numerator.getOrElse(0) / denominator.getOrElse(0));
 }
 
 export const toNumber = (a: string) => {
